@@ -8,11 +8,20 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // apache 依赖
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
     compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+    // HttpClient 依赖
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    // excel依赖
+    compile group: 'org.apache.poi', name: 'poi', version: '3.17'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
 
 }
